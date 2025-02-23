@@ -1,9 +1,9 @@
 // Fetch ou Axios
 import axios from "axios";
 
-// const NODE_ENV = process.env.NODE_ENV;
-// const URL = NODE_ENV === 'development' ? "http://localhost:3001/api" : "/api";
-const URL ="https://spotify-project-uovs.onrender.com/api";
+// const { NODE_ENV } = process.env;
+// const URL = "http://localhost:3001/api";
+const URL = "https://spotify-project-uovs.onrender.com/api";
 
 const responseArtists = await axios.get(`${URL}/artists`);
 const responseSongs = await axios.get(`${URL}/songs`);
